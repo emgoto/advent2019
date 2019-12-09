@@ -95,10 +95,9 @@ const render = (input: number[], width: number): void => {
 };
 
 /* Tests */
-// test(goA('123456789012', 3, 2), 1);
-// test(goB('0222112222120000', 2, 2), [0, 1, 1, 0]);
+test(goA('123456789012', 3, 2), 1);
+test(goB('0222112222120000', 2, 2), [0, 1, 1, 0]);
 
 const resultA = goA(input, 25, 6);
-const resultB = goB(input, 25, 6)
+goB(input, 25, 6); // Solution is printed out in terminal
 console.log("Solution to part 1:", resultA)
-console.log("Solution to part 2:", resultB)
